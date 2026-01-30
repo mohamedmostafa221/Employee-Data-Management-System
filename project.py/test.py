@@ -185,5 +185,6 @@ class StaffSystem:
                 print("Wrong choice")
 
 
-app = StaffSystem()
+app = StaffSystem()2
+
 app.menu()

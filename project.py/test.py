@@ -1,9 +1,13 @@
 import csv
+import os 
 
 class StaffSystem:
-
     def __init__(self):
-        self.file = "employees.csv"
+       
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        
+        self.file = os.path.join(base_dir, "employees.csv")
+        
         self.data = {}
         self.read_file()
 
@@ -185,6 +189,6 @@ class StaffSystem:
                 print("Wrong choice")
 
 
-app = StaffSystem()2
+app = StaffSystem()
 
 app.menu()
